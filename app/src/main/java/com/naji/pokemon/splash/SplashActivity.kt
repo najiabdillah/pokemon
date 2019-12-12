@@ -15,12 +15,8 @@ import com.naji.pokemon.presenter.SplashPresenterFactory
 import io.reactivex.disposables.CompositeDisposable
 import kotlinx.android.synthetic.main.activity_splash.*
 
-/**
- * Splash Activity will fetch the data. If successful it will start Pokemon Activity. If failure, a
- * button retry will show up.
- *
- * @author Damien
- */
+
+
 class SplashActivity : AppCompatActivity(), View.OnClickListener {
 
     companion object {

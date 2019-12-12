@@ -5,11 +5,7 @@ import com.naji.pokemon.model.PikacuDao
 import com.naji.pokemon.api.PikacuServer
 import com.naji.pokemon.presenter.BasePresenter
 
-/**
- * Presenter for Splash Activity
- *
- * @author Damien
- */
+
 class SplashActivityPresenter(server: PikacuServer, dao: PikacuDao) : BasePresenter() {
 
     /**
