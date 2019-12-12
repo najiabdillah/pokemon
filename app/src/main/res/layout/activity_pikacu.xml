@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:focusableInTouchMode="true"
+    tools:context=".activity.PikacuActivity">
+
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="13dp"
+        android:background="@drawable/ic_sp_rectangle_greyscale_black"
+        android:elevation="8dp"
+        android:gravity="center"
+        android:textColor="@color/color_black"
+        app:defaultQueryHint="@string/hint_query"
+        app:iconifiedByDefault="false"
+        app:layout_constraintBottom_toTopOf="@+id/recycler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:queryHint="@string/hint_query"></android.support.v7.widget.SearchView>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/color_white"
+        app:fastScrollHorizontalThumbDrawable="@drawable/ic_spact_draw"
+        app:fastScrollHorizontalTrackDrawable="@drawable/ic_line_drawable"
+        app:fastScrollVerticalThumbDrawable="@drawable/ic_spact_draw"
+        app:fastScrollVerticalTrackDrawable="@drawable/ic_line_drawable"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchView"
+        tools:listitem="@layout/item_pikacu" />
+
+
+</android.support.constraint.ConstraintLayout>
